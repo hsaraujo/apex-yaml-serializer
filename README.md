@@ -1,6 +1,8 @@
 # YAML Serializer
 
 ## How to use
+
+### Initialize
 ```
 public class Person{
 
@@ -23,7 +25,7 @@ public class Address{
 }
 
 public class ContactDetail{
-    
+
     public String email;
     public String phone;
 
@@ -46,6 +48,7 @@ person.addresses = new List<Address>{
 person.contactDetail = new ContactDetail('sam@test.com', '0221230987');
 ```
 
+### Execute
 `    
 String yamlString = YAML.serialize( person );
 `
